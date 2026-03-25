@@ -12,7 +12,7 @@ def build_treemap(path, indent=0):
             lines.append(f'{prefix}"{entry.name}"')
             lines.extend(build_treemap(entry.path, indent + 1))
         else:
-            lines.append(f'{prefix}"{entry.name}": 1')
+            lines.append(f'{prefix}"{entry.name}"')
     return lines
 
 
